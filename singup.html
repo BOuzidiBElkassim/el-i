@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>Connexion Inscription</title>
+		<link rel="stylesheet" href="stylesingup.css">
+	</head>
+	<body>
+		<div class="login-page">
+		<div class="form">
+			
+				<form class ="register-form">
+					<input type="text" placeholder="Nom Utilisateur">
+					<input type="email" placeholder="Email">
+					<input type="password" placeholder="Mot de passe">
+					<button>Créer</button>
+					<p class="message"> Déjà inscrit ?<a href="#">Connectez vous</a> </p>
+
+				</form>
+
+				<form class ="login-form">
+						<input type="email" placeholder="Email">
+						<input type="password" placeholder="Mot de passe">
+						<button>Connexion</button>
+						<p class="message"> Pas de compte ?<a href="#">Inscrivez vous</a href="#"> </p>
+	
+				</form>
+	
+
+			</div>
+		</div>
+
+		<script src = 'https://code.jquery.com/jquery-3.4.1.min.js'></script>
+		<script>
+			$('.message a').click(function(){
+			$('.login-form').animate({height:"toggle",opacity:"toggle"}, "slow");
+			$('.register-form').animate({height:"toggle",opacity:"toggle"}, "slow");
+			});
+		</script>
+	</body>
+</html>	

@@ -177,4 +177,20 @@ footer > div {
 
 footer > div > * {
     border: 1px solid white;
+    width: 100%;
+}
+
+footer > div.contact > div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+footer > div.contact > div > i {
+    font-size: 35px;
+    margin-right: 50px;
+
+    background-color: grey;
+    border-radius: 50%;
+    padding: 10px;
 }

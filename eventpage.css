@@ -6,6 +6,12 @@ body {
 .nb {
     background-color: blanchedalmond;
     width: 80%;
+    min-height: 7000px;
     height: 100% !important;
-    margin: 0px auto;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 100px;
+}   
+p {
+    margin: auto;
 }

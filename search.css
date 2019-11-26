@@ -25,7 +25,6 @@ body {
 }
 
 .search-field {
-    margin-left: 20px;
     height: 50px;
     padding: 10px;
     border: none;
@@ -40,7 +39,6 @@ body {
     widows: 200px;
 }
 .search-btn {
-    margin-left: 20px;
     height: 50px;
     width: 150px;
     background: #4CAF50;
@@ -55,6 +53,7 @@ body {
 }
 
 .form-box {
+    background: rgb(0,0,0,0.5);
     padding: 30px;
     display: flex;
     justify-content: center;

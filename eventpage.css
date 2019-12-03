@@ -2,7 +2,8 @@ body {
     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("./img/back.jpg");
 	height: 100vh;
 	background-size: cover;
-	background-position: center;
+    background-position: center;
+    color: #eee;
 }
 
 /*.nb {
@@ -37,22 +38,33 @@ h1 {
 
 .gird-item-2 {
     grid-row: span 3;
-    background-color:  gray;
+    background: rgb(0,0,0,0.5);
 }
 .gird-item-3 {
     grid-column: span 1;
     grid-row: span 2;
-    background-color: brown;
+    background: rgb(0,0,0,0.5);
 }
 .gird-item-4 {
     grid-column: span 1;
     grid-row: span 1;
-    background-color: blue;
+    background: rgb(0,0,0,0.5);;
+}
+.location {
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("./img/location.jpg");
+    background-size: cover;
+}
+.image {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.2),rgba(0,0,0,0.7)), url("./img/image1.jpg");
+    background-size: cover;
 }
 
-.image {
-    background-image: url("./img/image1.jpg");
-    background-size: cover;
+ul {
+    list-style-type: none;
+    
 }
 
 div.inscrire {

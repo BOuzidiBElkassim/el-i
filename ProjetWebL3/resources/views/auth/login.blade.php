@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-<link rel="stylesheet" href="stylesingup.css">
+<link rel="stylesheet" href="{{asset('css/stylesingup.css')}}">
 <div class="login-page">
 		<div class="form">
     
-				<form class ="register-form"> 
+				<form class ="register-form" action="{{ route('register') }}"> 
 					<input type="text" placeholder="Nom Utilisateur">
 					<input type="email" placeholder="Email">
 					<input type="password" placeholder="Mot de passe">
@@ -47,12 +47,4 @@
 
 			</div>
 		</div>
-
-		<script src = 'https://code.jquery.com/jquery-3.4.1.min.js'></script>
-		<script>
-			$('.message a').click(function(){
-			$('.login-form').animate({height:"toggle",opacity:"toggle"}, "slow");
-			$('.register-form').animate({height:"toggle",opacity:"toggle"}, "slow");
-			});
-		</script>
 @endsection

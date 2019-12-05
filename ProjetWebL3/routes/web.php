@@ -20,3 +20,6 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/events', 'EventsController@index');
+
+Route::get('/search', 'SearchController@index')->name('search.index');
+Route::post('/search/results', 'SearchController@search')->name('search.search');

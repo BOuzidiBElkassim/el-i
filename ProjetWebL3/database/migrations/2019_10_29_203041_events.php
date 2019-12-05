@@ -16,8 +16,8 @@ class Events extends Migration
         Schema::create('events', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
-            $table->date('date_evenement');
-            $table->string('nom_evenement');
+            $table->date('date');
+            $table->string('nom');
             $table->integer('late'); /* GPS */
             $table->integer('long'); /* GPS */
             $table->string('theme');

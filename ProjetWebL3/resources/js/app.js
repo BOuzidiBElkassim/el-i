@@ -30,3 +30,10 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 const app = new Vue({
     el: '#app',
 });
+
+
+$('.message a').click(function(){
+$('.login-form').animate({height:"toggle",opacity:"toggle"}, "slow");
+$('.register-form').animate({height:"toggle",opacity:"toggle"}, "slow");
+});
+

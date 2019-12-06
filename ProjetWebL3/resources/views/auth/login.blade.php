@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layout')
 
 @section('content')
 <link rel="stylesheet" href="{{asset('css/stylesingup.css')}}">

@@ -28,36 +28,9 @@
                 </div>
             @endif
         </div> -->
-        <header>
-        <div class="container">
-        <div id="logo">
+        @extends('layout')
 
-        <h1> le titre de  logo</h1>
-        </div>
-
-        <nav>
-
-            <ul>
-
-                <li><a href="/"> HOME</a></li>
-                <li><a href="/search"> Recherche</a></li>
-                @if (Route::has('login'))
-                @auth
-                <a href="{{url('/home')}}"></a>
-                @else 
-                <li><a href="{{route('login')}}">Sing UP/IN</a></li>
-                @endif
-                @endauth
-            </ul>
-
-
-        </nav>
-
-
-        </div>
-
-
-    </header>
+@section('content')
 
     <section id="showcase">
         <div class="container">
@@ -93,15 +66,15 @@
 
     <section id="theboxes">
             <div class="column">
-                    <img src="./img/11.png">
+                    <img src="{{ asset('css/img/11.png') }}">
                     <h1>welcome to our web site </h1>
                     <p>siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié.</p>
             </div>
-            <div class="column">                    <img src="./img/22.png">
+            <div class="column">                    <img src="{{ asset('css/22.png') }}">
                     <h1>welcome to our web site </h1>
                     <p>siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié.</p>
             </div>
-            <div class="column">                    <img src="./img/33.png">
+            <div class="column">                    <img src="{{ asset('css/33.png') }}">
                     <h1>welcome to our web site </h1>
                     <p>siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié.</p>
             </div>
@@ -156,3 +129,4 @@
 </footer>
     </body>
 </html>
+@endsection

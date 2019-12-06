@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layout')
 
 @section('content')
 <link rel="stylesheet" href="{{asset('css/search.css')}}">
@@ -25,7 +25,7 @@
                 <p>{{$event->descriptif}}
                 </p>
             </div>
-            <button> <a href="eventpage2.html">Afficher</a></button>
+            <button> <a href="/eventpage">Afficher</a></button>
         </div>
     @endforeach
 </div>

@@ -17,6 +17,14 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::get('/eventpage', function() {
+    return view('eventpage');
+});
+
+/* Route::get('/register',function() {
+    return view('register');
+}); */
+
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/events', 'EventsController@index');

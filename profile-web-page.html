@@ -30,7 +30,10 @@
         <a class="active" id="apropos" href="#"> information personnelle</a>
         <a id="apropos2" href="#">J'ai participé aux</a>
         <a id="apropos3" href="#">je participerai aux</a>
+        <a id="contribuer" href="#">mes contributions</a>
+
         <a id="edit-profil" href="#">Modifier Profil</a>
+
 
 
 
@@ -193,6 +196,95 @@
                 </section>
             </form>
         </section>
+
+
+        <section class="contribution">
+
+
+            <h2>Contributions</h2>
+            <p>Ici vous trouverer les contribution de l'utilisateur : </p>
+                <section class="myevents">
+
+
+
+                        <div class="box">
+                                <h2 style="font-family: 'Lato', sans-serif;"> title event</h2>
+                                <img src="/home/hririche/git/el-i/img/nimg.jpg">
+                                <button>click Here <i class="fas fa-glasses"></i></button>
+                    
+                            </div>
+                
+                
+                
+                            <div class="box">
+                                    <h2 style="font-family: 'Lato', sans-serif;"> title event</h2>
+                                    <img src="/home/hririche/git/el-i/img/nimg.jpg">
+                                    <button>click Here <i class="fas fa-glasses"></i></button>
+                        
+                                </div>
+
+
+
+
+
+
+                </section>
+            <p>Ajouter un évenement :</p>
+            <form action="" method="post" class="form-event">
+                <section class="add-event">
+                    <legend>Information sur l'évenement</legend>
+                    <div class="label-input">
+                        <label for="title">Titre</label>
+                        <input type="text" name="title" id="title" required />
+                    </div>
+                    <div class="label-input">
+                        <label for="date_event">Date</label>
+                        <input type="date" name="date_event" id="date_event" />
+                    </div>
+                    
+                    
+                    <div class="label-input">
+                        <label for="image">Ajouter une image</label>
+                        <input type="file" name="image" id="image" />
+                    </div>
+                    <div class="label-input">
+                        <label for="description">Description</label>
+                        <textarea name="description" id="description"></textarea>
+                    </div>
+                </section>
+                <section class="adresse">
+                    <legend>Informations sur l'adresse</legend>
+                    <div class="label-input">
+                        <label for="num_r">Numéro de la rue</label>
+                        <input type="number" name="num_r" id="num_r" />
+                    </div>
+                    <div class="label-input">
+                        <label for="nom_r">Nom de la rue</label>
+                        <input type="text" name="nom_r" id="nom_r" />
+                    </div>
+                    <div class="label-input">
+                        <label for="ville">Ville</label>
+                        <input type="text" name="ville" id="ville" />
+                    </div>
+                    <div class="label-input">
+                        <label for="pays">Pays</label>
+                        <input type="text" name="pays" id="pays" />
+                    </div>
+                    <div class="label-input">
+                        <label for="code_postal">Code postal</label>
+                        <input type="text" name="code_postal" id="code_postal" />
+                    </div>
+                    <div class="label-input">
+                        <label for="cmp_adr">Complément d'adresse</label>
+                        <textarea id="cmp_adr" name="cmp_adr"></textarea>
+                    </div>
+                </section>
+                <section class="submit">
+                    <button type="submit"><i class="fas fa-check"></i> Ajouter évenement</button>
+                    <button type="reset"><i class="fas fa-times"></i> Annuler</button>
+                </section>
+            </form>
+        </section>    
     
     </article>
     
@@ -205,12 +297,6 @@
             
                 <div class="footer-items">
     
-                        <h1>Hello guys!!</h1>
-                        <p> Hello guys!!
-                                This video shows you how you can 
-                                create a Responsive footer section
-                                Hope this video is clear to you.
-                        </p>
             
             
             
@@ -288,6 +374,5 @@
     
     
     </div>
-    <script src="js/profile.js">
     </script>
 </html>

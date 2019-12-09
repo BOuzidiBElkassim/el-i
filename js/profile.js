@@ -1,20 +1,24 @@
-var liens = ["apropos","aporpos2","aporpos3","edit-profil"];
-var article = document.querySelector("article");
-var sections = article.querySelectorAll("section");
-var divLiens = article.querySelector(".liens")
+var liens = ["infop", "participe", "past-participe", "contribution", "edit-profil"];
 
-for (const sec of sections) {
+var profil = document.querySelector(".profile");
+var sections = document.querySelectorAll("article > section");
+var divLiens = document.querySelector(".liens");
+
+for (let sec of sections) {
     sec.style.display = "none";
 }
-article.querySelector("section.apropos").style.display = "block";
-for (const lien of liens) {
-    divLiens.querySelector("a#"+lien).addEventListener("click",function () {
-        for (const a of divLiens.querySelector("a")) {
+profil.querySelector('section.infop').style.display = "flex";
+
+for (let lien of liens) {
+    console.log(lien);
+    divLiens.querySelector('a#' + lien).addEventListener("click", function () {
+        for (let a of divLiens.querySelectorAll('a')) {
             a.classList.remove("active");
         }
         this.classList.add("active");
-        for (const sec of sections) {
-            
+        for (let sec of sections) {
+            sec.style.display = "none";
         }
+        profil.querySelector("section." + lien).style.display = "flex";
     });
 }

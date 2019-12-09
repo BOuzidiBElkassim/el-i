@@ -1,35 +1,67 @@
+<!DOCTYPE html>
+
 <html>
     <head>
-        <meta charset="utf-8">        
+        <meta charset="utf-8">
+        <meta name="viweport" content="width=device-width">
+        <link rel="stylesheet" href="{{asset('css/style.css')}}">
         <link rel="stylesheet" href="{{asset('css/eventpage.css')}}">
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
     </head>
 
 <body>
 
-        @extends('layout')
+    <header>
+        <div class="container">
+        <div id="logo">
 
-        @section('content')
+        <h1> le titre de  logo</h1>
+        </div>
 
-<div class="gird-container">
+        <nav>
+
+            <ul>
+
+                <li><a href="/"> HOME</a></li>
+                <li><a href="/search"> RECHERCHE</a></li>
+                @if (Route::has('login'))
+                @auth
+                <a href="{{url('/home')}}"></a>
+                @else 
+                <li><a href="{{route('login')}}">Sing UP/IN</a></li>
+                @endif
+                @endauth
+
+            </ul>
+
+
+        </nav>
+
+
+        </div>
+
+        
+    </header>
+
+    <div class="gird-container">
         <div class="gird-item gird-item-1 image">
         </div>  
         <div class="gird-item gird-item-2">
-            <h1>Description de l'event</h1>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-        Nam sapiente, culpa rem molestiae soluta architecto iure, 
-        saepe cumque atque quidem accusamus veritatis suscipit consectetur 
-        fuga doloribus molestias assumenda. Excepturi, recusandae.
+            <h1>{{$events->nom}}</h1>
+        {{$events->descriptif}}
        </div>  
 
         <div class="gird-item gird-item-3">
         <h1>Infos event</h1>
         <div class="infos">
         <ul>
-            <li>Heure :</li>
-            <li>Date :</li>
-            <li>Thème :</li>
-            <li>Location :</li>
-            <li>Effectif : min/max</li>
+            <li>Date : {{$events->date}}</li>
+            <li>Thème : {{$events->theme}}</li>
+            <li>Location : {{$events->late}} {{$events->long}}</li>
+            <li>Effectif Max : {{$events->effectif_max}}</li>
+            <li>Date d'ajout :  {{$events ->created_at }}</li>
         </ul>
         </div>
         <div class="location">
@@ -67,4 +99,5 @@
     </div>
 
 </body>
-@endsection
+
+</html>

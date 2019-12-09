@@ -17,17 +17,16 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/eventpage', function() {
-    return view('eventpage');
-});
+Route::get('/eventpage', 'EventpageController@index' );
 
-/* Route::get('/register',function() {
-    return view('register');
-}); */
+Route::get('/register',function() {
+    return view('auth.register');
+});
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/events', 'EventsController@index');
+Route::post('/search/results', 'SearchController@search')->name('search.search'); 
 
-Route::get('/search', 'SearchController@index')->name('search.index');
-Route::post('/search/results', 'SearchController@search')->name('search.search');
+Route::resource('/search','SearchController');
+
+Route::resource('/events','EventpageController');

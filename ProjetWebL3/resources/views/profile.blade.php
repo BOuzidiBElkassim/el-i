@@ -1,7 +1,11 @@
+@extends('layout')
+
+@section('content')
+<link rel="stylesheet" href="{{asset('css/profile.css')}}">
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <link rel="stylesheet" href="footer1.css">
         <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet"> *
         <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"> 
 
@@ -15,7 +19,7 @@
 </head>
 <body>
 
-    <article class="profile">
+    <article>
      <img src="/home/hririche/git/el-i/ProjetWebL3/profile-img.png">
      <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet"> 
      <ul>
@@ -27,15 +31,19 @@
 
     <div class="liens">
 
-        <a class="active" id="infop" href="#"> information personnelle</a>
-        <a id="participe" href="#">J'ai participé aux</a>
-        <a id="past-participe" href="#">je participerai aux</a>
-        <a id="contribution" href="#">mes contributions</a>
+        <a class="active" id="apropos" href="#"> information personnelle</a>
+        <a id="apropos2" href="#">J'ai participé aux</a>
+        <a id="apropos3" href="#">je participerai aux</a>
+        <a id="contribuer" href="#">mes contributions</a>
 
         <a id="edit-profil" href="#">Modifier Profil</a>
 
+
+
+
+
     </div>
-    <section class="infop">
+    <section class="apropos">
         <div class="box">
             <h2 style="font-family: 'Lato', sans-serif;"> title event</h2>
             <img src="./img/nimg.jpg">
@@ -60,8 +68,8 @@
         
                 </div>
     </section>
-    <section class="participe">
-                <div class="box">
+    <section class="apropos2">
+            <div class="box">
                     <h2 style="font-family: 'Lato', sans-serif;"> title event</h2>
                     <img src="/home/hririche/git/el-i/img/nimg.jpg">
                     <button>click Here <i class="fas fa-glasses"></i></button>
@@ -86,7 +94,7 @@
                         </div>
     </section>
 
-    <section class="past-participe">
+    <section class="apropos3">
             <div class="box">
                     <h2 style="font-family: 'Lato', sans-serif;"> title event</h2>
                     <img src="/home/hririche/git/el-i/img/nimg.jpg">
@@ -112,7 +120,7 @@
                         </div>
     </section>
      
-   <!--  <section class="edit-profil">
+    <{{-- section class="edit-profil">
             <p>Modifier vos information</p>
             <h2>Edit Profile</h2>
             <form action="" method="post" class="form-edit">
@@ -200,6 +208,9 @@
             <h2>Contributions</h2>
             <p>Ici vous trouverer les contribution de l'utilisateur : </p>
                 <section class="myevents">
+
+
+
                         <div class="box">
                                 <h2 style="font-family: 'Lato', sans-serif;"> title event</h2>
                                 <img src="/home/hririche/git/el-i/img/nimg.jpg">
@@ -221,7 +232,8 @@
 
 
 
-                </section> -->
+                </section>
+--}}
             <p>Ajouter un évenement :</p>
             <form action="" method="post" class="form-event">
                 <section class="add-event">
@@ -278,103 +290,9 @@
                 </section>
             </form>
         </section>    
-    
     </article>
-    //liens 
-</body>
-<<<<<<< HEAD
-<script src="./js/profile.js"></script>
+    
 
-<div class="footer">
-=======
-<!-- <div class="footer">
->>>>>>> abdad1bfcbea691353f378673af657a687586113
-        <div class="inner-footer">
-    
-    
-    
-            
-                <div class="footer-items">
-    
-            
-            
-            
-            
-                    </div>
-                    
-    
-    
-    
-                <div class="footer-items">
-    
-                        <h2>Quick links </h2>
-                        <div class="border"></div>
-                        <ul>
-                            <a href=""><li> Home </li></a>
-                            <a href=""><li> Home </li></a>
-                            <a href=""><li> Home </li></a>
-                            <a href=""><li> Home </li></a>
-    
-    
-                        </ul>
-                        
-            
-            
-            
-            
-                </div>
-                <div class="footer-items">
-    
-                        <h2> Contacter Nous </h2>
-                        <div class="border"></div>
-                        <ul>
-                           <li><i class="fas fa-map-marked-alt"></i> 1516 avenue augusstin fliche</li>
-                           <li><i class="fas fa-sms"></i> +33-7-673-262-89</li> 
-                           <li><i class="fas fa-envelope"></i> support@evarois.fr </li> 
-                        </ul>
-                        <div class="social-media">
-                            <a href=""><i class="fab fa-facebook-square"></i></a>
-                            <a href=""><i class="fab fa-instagram"></i></a>
-                            <a href=""><i class="fab fa-twitter-square"></i></a>
-    
-    
-    
-                        </div>
-                        
-            
-            
-            
-            
-                </div>
-                
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-        </div>
-        <div class="footer-bottom">
-    
-                Copyright &copy; El i & Co 2019 , All right reserved.
-            </div>            
-    
-    
-    
-    
-    
-    
-    
-<<<<<<< HEAD
-    </div>
-=======
-    </div> -->
->>>>>>> abdad1bfcbea691353f378673af657a687586113
-   </html>
+
+
+@endsection

@@ -15,20 +15,20 @@
             </div>
         </form>
     </div>
-
 <div class="containe">
     @foreach($events as $event)
         <div class="box">
             <img src="{{ asset('css/img/image1.jpg') }}">
                 <h1>{{$event->nom}}</h1>
             <div class="des">
-                <p>{{$event->descriptif}}
+                <p>{{$event->date}}
                 </p>
             </div>
-            <button> <a href="/eventpage">Afficher</a></button>
+            <button> <a href="/search/{{$event->id}}">Afficher</a></button>
         </div>
     @endforeach
 </div>
 
+    
 {{ $events->links() }}
 @endsection

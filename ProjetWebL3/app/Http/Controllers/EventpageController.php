@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Event;
 
-class SearchController extends Controller
+class EventpageController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,21 +14,17 @@ class SearchController extends Controller
      */
     public function index()
     {   
-        $events = Event::All();
-        $events = Event::paginate(20);
-        return view('search')->with ('events',$events);
+        return view('eventpage');
     }
 
     /**
-     * search for events
+     * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function search()
+    public function create()
     {
-        $q = request('name');
-        $events = Event::where('nom', 'like', '%' . $q . '%')->paginate(20);
-        return view('search')->with ('events',$events);
+        //
     }
 
     /**
@@ -50,10 +46,7 @@ class SearchController extends Controller
      */
     public function show($id)
     {
-        $events = Event::find($id);
-
-        return view('eventpage')->with('events',$events) ;
-
+        return Event::find($id);
     }
 
     /**
@@ -64,6 +57,7 @@ class SearchController extends Controller
      */
     public function edit($id)
     {
+        //
     }
 
     /**

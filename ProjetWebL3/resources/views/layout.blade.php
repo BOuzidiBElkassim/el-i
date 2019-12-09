@@ -1,5 +1,8 @@
- <head>
+
+<html>
+<head>
         <meta charset="utf-8">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
         <meta name="viweport" content="width=device-width">
         <link rel="stylesheet" href="{{asset('css/style.css')}}">
         <link rel="stylesheet" href="{{asset('css/footer1.css')}}">      
@@ -40,8 +43,10 @@
 
         </div>
 
-
-    </header><!-- 
+        
+    </header>
+    @yield('content')
+    <!-- 
     <div class="footer">
                 <div class="inner-footer">
             
@@ -132,7 +137,8 @@
             
             
             
-            </div> -->
-    @yield('content')
+
+                </div> -->
 </body>
 
+</html>

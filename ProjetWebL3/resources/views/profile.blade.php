@@ -1,7 +1,11 @@
+@extends('layout')
+
+@section('content')
+<link rel="stylesheet" href="{{asset('css/profile.css')}}">
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <link rel="stylesheet" href="footer1.css">
         <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet"> *
         <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"> 
 
@@ -116,7 +120,7 @@
                         </div>
     </section>
      
-   <!--  <section class="edit-profil">
+    <{{-- section class="edit-profil">
             <p>Modifier vos information</p>
             <h2>Edit Profile</h2>
             <form action="" method="post" class="form-edit">
@@ -228,7 +232,8 @@
 
 
 
-                </section> -->
+                </section>
+--}}
             <p>Ajouter un évenement :</p>
             <form action="" method="post" class="form-event">
                 <section class="add-event">
@@ -285,93 +290,9 @@
                 </section>
             </form>
         </section>    
-    
     </article>
     
-</body>
-<!-- <div class="footer">
-        <div class="inner-footer">
-    
-    
-    
-            
-                <div class="footer-items">
-    
-            
-            
-            
-            
-                    </div>
-                    
-    
-    
-    
-                <div class="footer-items">
-    
-                        <h2>Quick links </h2>
-                        <div class="border"></div>
-                        <ul>
-                            <a href=""><li> Home </li></a>
-                            <a href=""><li> Home </li></a>
-                            <a href=""><li> Home </li></a>
-                            <a href=""><li> Home </li></a>
-    
-    
-                        </ul>
-                        
-            
-            
-            
-            
-                </div>
-                <div class="footer-items">
-    
-                        <h2> Contacter Nous </h2>
-                        <div class="border"></div>
-                        <ul>
-                           <li><i class="fas fa-map-marked-alt"></i> 1516 avenue augusstin fliche</li>
-                           <li><i class="fas fa-sms"></i> +33-7-673-262-89</li> 
-                           <li><i class="fas fa-envelope"></i> support@evarois.fr </li> 
-                        </ul>
-                        <div class="social-media">
-                            <a href=""><i class="fab fa-facebook-square"></i></a>
-                            <a href=""><i class="fab fa-instagram"></i></a>
-                            <a href=""><i class="fab fa-twitter-square"></i></a>
-    
-    
-    
-                        </div>
-                        
-            
-            
-            
-            
-                </div>
-                
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-        </div>
-        <div class="footer-bottom">
-    
-                Copyright &copy; El i & Co 2019 , All right reserved.
-            </div>            
-    
-    
-    
-    
-    
-    
-    
-    </div> -->
-   </html>
+
+
+
+@endsection

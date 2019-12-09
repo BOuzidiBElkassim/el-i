@@ -5,14 +5,14 @@
 <div class="login-page">
 		<div class="form">
     
-				<form class ="register-form" action="{{ route('register') }}"> 
+{{-- 				<form class ="register-form" action="{{ route('register') }}"> 
 					<input type="text" placeholder="Nom Utilisateur">
 					<input type="email" placeholder="Email">
 					<input type="password" placeholder="Mot de passe">
 					<button>Créer</button>
 					<p class="message"> Déjà inscrit ?<a href="#">Connectez vous</a> </p>
 
-				</form>
+				</form> --}}
 
 				<form method="POST" action="{{ route('login') }}"  class ="login-form">
                         @csrf
@@ -40,7 +40,7 @@
                                         {{ __('Forgot Your Password?') }}
                                     </a>
                                 @endif
-						<p class="message"> Pas de compte ?<a href="#">Inscrivez vous</a href="#"> </p>
+                                <p class="message"> Pas de compte ?<a href="/register">Inscrivez vous</a></p>
 	
 				</form>
 	

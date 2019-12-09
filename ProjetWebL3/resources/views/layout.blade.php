@@ -14,8 +14,8 @@
     <header>
         <div class="container">
         <div id="logo">
+        <img src="{{ asset('css/img/logo_transparent-2.png') }}">
 
-        <h1> le titre de  logo</h1>
         </div>
 
         <nav>

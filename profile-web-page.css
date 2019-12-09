@@ -53,7 +53,7 @@ article div.liens a {
 
     font-family: 'Righteous';
 }
-.apropos{
+.infop{
     padding: 23px;
     height: 600px;
     justify-content: space-around;
@@ -61,7 +61,7 @@ article div.liens a {
     flex-direction: row;
 
 }
-.apropos2{
+.participe{
     padding: 23px;
     height: 600px;
     justify-content: space-around;
@@ -69,7 +69,7 @@ article div.liens a {
     flex-direction: row;
 
 }
-.apropos3{
+.past-participe{
     padding: 23px;
     height: 600px;
     justify-content: space-around;

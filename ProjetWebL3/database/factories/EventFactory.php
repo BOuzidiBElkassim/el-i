@@ -17,6 +17,10 @@ $factory->define(Event::class, function (Faker $faker) {
         'effectif_max' => $faker->randomDigit,
         'effectif_min' => $faker->randomDigit,
         'descriptif' => $faker->text,
-        'user_id' => User::all()->random()->id
+        'user_id' => User::all()->random()->id,
+        'nom_rue' => $faker->text,
+        'ville' => $faker->word,
+        'codepostal' => $faker ->randomDigit,
+        'complement' => $faker ->word
     ];
 });

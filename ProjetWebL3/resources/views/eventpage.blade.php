@@ -59,7 +59,8 @@
         <ul>
             <li>Date : {{$events->date}}</li>
             <li>Thème : {{$events->theme}}</li>
-            <li>Location : {{$events->late}} {{$events->long}}</li>
+            <li>Ville: {{$events->ville}}</li>
+            <li>Adresse : {{$events->nom_rue}} </li>
             <li>Effectif Max : {{$events->effectif_max}}</li>
             <li>Date d'ajout :  {{$events ->created_at }}</li>
         </ul>

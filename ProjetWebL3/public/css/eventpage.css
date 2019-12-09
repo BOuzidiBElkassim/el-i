@@ -42,11 +42,11 @@ h1 {
 }
 .gird-item-3 {
     grid-column: span 1;
-    grid-row: span 2;
+    grid-row: span 3;
     background: rgb(0,0,0,0.5);
 }
 .gird-item-4 {
-    grid-column: span 1;
+    grid-column: span 2;
     grid-row: span 1;
     background: rgb(0,0,0,0.5);;
 }

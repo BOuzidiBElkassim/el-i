@@ -27,6 +27,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::post('/search/results', 'SearchController@search')->name('search.search'); 
 
+Route::post('/profile/store','ProfileController@store')->name('profile.store'); 
+
 Route::resource('/search','SearchController');
 
 Route::resource('/events','EventpageController');
+
+Route::resource('/profile','ProfileController');

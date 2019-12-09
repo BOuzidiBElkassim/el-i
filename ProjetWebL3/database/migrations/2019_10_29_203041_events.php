@@ -20,6 +20,10 @@ class Events extends Migration
             $table->string('nom');
             $table->integer('late'); /* GPS */
             $table->integer('long'); /* GPS */
+            $table->text('nom_rue');
+            $table->text('complement');
+            $table->string('ville');
+            $table->integer('codepostal');
             $table->string('theme');
             $table->text('descriptif');
             $table->integer('effectif_max');

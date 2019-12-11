@@ -232,7 +232,7 @@
                 </section> -->
             <p>Ajouter un évenement :</p>
             {{-- <form action="{{ route('search.search') }}" method="post" class="form-event"> --}}
-                    {!! Form::open(['action' => 'ProfileController@store', 'method' => 'POST' , 'class' => 'form-event' ]) !!}
+ {!! Form::open(['action' => 'ProfileController@store', 'method' => 'POST' , 'class' => 'form-event' ]) !!}
                     
     
                 <section class="add-event">

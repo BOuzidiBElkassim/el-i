@@ -36,7 +36,7 @@ class ProfileController extends Controller
     public function store(Request $request)
     {
 
-         $this->validate($request, [
+       /*   $this->validate($request, [
             'title' => 'required',
             'date_event' => 'required'
             ]); 
@@ -50,7 +50,7 @@ class ProfileController extends Controller
         $events->complement =$request->input('cmp_adr');
         $events->save(); */
 
-         return 123 /* redirect('/search')->with('succes','Event Created') */; 
+       /*  return 123 /* redirect('/search')->with('succes','Event Created') */
 
     }   
 

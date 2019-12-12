@@ -38,19 +38,19 @@ class ProfileController extends Controller
 
          $this->validate($request, [
             'title' => 'required',
-            'date_event' => 'required'
+            'date' => 'required'
             ]); 
-        /* $events = new Event;
+        $events = new Event;
         $events->nom = $request->input('title');
-        $events->date =$request->input('date_event');
+        $events->date =$request->input('date');
         $events->nom_rue =$request->input('nom_r');
         $events->ville =$request->input('ville');
         $events->descriptif =$request->input('description');
         $events->codepostal =$request->input('code_postal');
         $events->complement =$request->input('cmp_adr');
-        $events->save(); */
+        $events->save(); 
 
-         return 123 /* redirect('/search')->with('succes','Event Created') */; 
+        return redirect('/search')->with('succes','Event Created')  ; 
 
     }   
 

@@ -18,17 +18,17 @@ class Events extends Migration
             $table->timestamps();
             $table->date('date');
             $table->string('nom');
-            $table->integer('late'); /* GPS */
-            $table->integer('long'); /* GPS */
+            $table->integer('late')->default('0'); /* GPS */
+            $table->integer('long')->default('0'); /* GPS */
             $table->text('nom_rue');
             $table->text('complement');
             $table->string('ville');
             $table->integer('codepostal');
-            $table->string('theme');
+            $table->string('theme')->default('nb');
             $table->text('descriptif');
-            $table->integer('effectif_max');
-            $table->integer('effectif_min');
-            $table->integer('user_id')->unsigned();
+            $table->integer('effectif_max')->default('0');
+            $table->integer('effectif_min')->default('0');
+            $table->integer('user_id')->default('0')->unsigned();
 
             // $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
 

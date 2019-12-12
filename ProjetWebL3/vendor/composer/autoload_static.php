@@ -405,10 +405,7 @@ class ComposerStaticInitf64744bc33c826d757c0f43156c47d08
         'App\\Http\\Controllers\\EventpageController' => __DIR__ . '/../..' . '/app/Http/Controllers/EventpageController.php',
         'App\\Http\\Controllers\\EventsController' => __DIR__ . '/../..' . '/app/Http/Controllers/EventsController.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
-<<<<<<< HEAD
         'App\\Http\\Controllers\\ProfileController' => __DIR__ . '/../..' . '/app/Http/Controllers/ProfileController.php',
-=======
->>>>>>> 0394269d73e84572b00a1a958a398e76813bc0f0
         'App\\Http\\Controllers\\SearchController' => __DIR__ . '/../..' . '/app/Http/Controllers/SearchController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
